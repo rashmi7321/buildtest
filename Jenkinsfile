@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/rashmi7321/hello-world-war.git';
+                    git 'https://github.com/rashmi7321/buildtest.git';
                 }
             }
         }
