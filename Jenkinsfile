@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-                    sh "script.sh"
+                    sh "/tmp/script.sh"
                     sh "mvn clean install"
                 }
             }
