@@ -1,2 +1,2 @@
 #!/bin/sh
-sed -i 's/buildnumber/$BUILD_NUMBER/g'	>> pom.xml
+sed -i 's/$BUILD_NUMBER/buildnumber/g'	>> pom.xml
