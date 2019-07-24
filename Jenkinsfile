@@ -14,7 +14,7 @@ pipeline {
                 script {
                     // If you are using Windows then you should use "bat" step
                     // Since unit testing is out of the scope we skip them
-                    sh "/tmp/script.sh"
+                    sh "sed -i 's/$BUILD_NUMBER/buildnumber/g' pom.xml"
                     sh "mvn clean install"
                 }
             }
